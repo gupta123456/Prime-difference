@@ -1,0 +1,17 @@
+<div class="container">
+  <h3><strong>No of test Cases</strong></h3>
+  <input type="number" class="form-control testCases" (keyup)="myFunction()" [(ngModel)]="number">
+</div>
+
+<div class="container" *ngIf="show">
+  <h3><strong>Input test range</strong></h3>
+  <section *ngFor="let i of range">
+    <input type="number" class="leftData form-control" [(ngModel)]="i.left" name="left_{{i.id}}" min="2">
+    <input type="number" class="rightData form-control" [(ngModel)]="i.right" name="right_{{i.id}}" max="10^6">
+  </section>
+  <button type="button" class="btn btn-primary" (click)="getValue()">Get Output</button>
+</div>
+
+<div class="container">
+  <p *ngIf="showOutput">{{output}}</p>
+</div>

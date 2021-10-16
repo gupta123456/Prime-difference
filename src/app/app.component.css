@@ -1,0 +1,20 @@
+.leftData {
+    display: inline-block;
+    margin-right: 10px;
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.rightData {
+    display: inline-block;
+    width: 150px;
+    padding: 10px;
+}
+.button {
+    margin-top: 10px;
+}
+.testCases {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+}
